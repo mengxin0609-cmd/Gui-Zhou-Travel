@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵州4天旅行攻略</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://webapi.amap.com/maps?v=2.0&key=62a4c6270c959c2b7878ab0f24377f16"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>贵州4天旅行攻略</h1>
+            <p class="subtitle">4月27日 - 4月30日 | 广东东莞出发</p>
+            <div class="weather-info">
+                <div class="weather-item">
+                    <span class="location">黄果树瀑布</span>
+                    <span class="weather">阵雨 16-26℃</span>
+                </div>
+                <div class="weather-item">
+                    <span class="location">西江千户苗寨</span>
+                    <span class="weather">阵雨 16-22℃</span>
+                </div>
+                <div class="weather-item">
+                    <span class="location">镇远古城</span>
+                    <span class="weather">晴 13-24℃</span>
+                </div>
+            </div>
+            <div class="feature-buttons">
+                <button id="reminder-btn" class="feature-btn">
+                    <span class="icon">🔔</span>
+                    <span>行程提醒</span>
+                </button>
+                <button id="checkin-btn" class="feature-btn">
+                    <span class="icon">📍</span>
+                    <span>景点打卡</span>
+                </button>
+                <button id="share-btn" class="feature-btn">
+                    <span class="icon">📤</span>
+                    <span>分享行程</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h2>行程概览</h2>
+                <div class="overview-cards">
+                    <div class="overview-card">
+                        <div class="day">Day 1</div>
+                        <div class="date">4月27日</div>
+                        <div class="activities">
+                            <div class="activity">
+                                <span class="icon">🚅</span>
+                                <span>东莞 → 贵阳</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🚌</span>
+                                <span>贵阳 → 黄果树瀑布</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🏨</span>
+                                <span>黄果树附近住宿</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="day">Day 2</div>
+                        <div class="date">4月28日</div>
+                        <div class="activities">
+                            <div class="activity">
+                                <span class="icon">🌊</span>
+                                <span>黄果树瀑布游览</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🚌</span>
+                                <span>黄果树 → 西江千户苗寨</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🏨</span>
+                                <span>西江千户苗寨住宿</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="day">Day 3</div>
+                        <div class="date">4月29日</div>
+                        <div class="activities">
+                            <div class="activity">
+                                <span class="icon">🏯</span>
+                                <span>西江千户苗寨游览</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🚌</span>
+                                <span>西江 → 镇远古城</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🏨</span>
+                                <span>镇远古城住宿</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="day">Day 4</div>
+                        <div class="date">4月30日</div>
+                        <div class="activities">
+                            <div class="activity">
+                                <span class="icon">🏞️</span>
+                                <span>镇远古城游览</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🚌</span>
+                                <span>镇远 → 贵阳</span>
+                            </div>
+                            <div class="activity">
+                                <span class="icon">🚅</span>
+                                <span>贵阳 → 东莞</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>详细时间表</h2>
+                <div class="timeline">
+                    <div class="timeline-day">
+                        <h3>Day 1 | 4月27日</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="time">08:00</div>
+                                <div class="content">
+                                    <div class="location">东莞</div>
+                                    <div class="activity">乘坐高铁前往贵阳</div>
+                                    <div class="note">建议提前30分钟到达高铁站</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">12:30</div>
+                                <div class="content">
+                                    <div class="location">贵阳北站</div>
+                                    <div class="activity">午餐</div>
+                                    <div class="note">高铁站附近用餐</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">14:00</div>
+                                <div class="content">
+                                    <div class="location">贵阳 → 黄果树</div>
+                                    <div class="activity">乘坐大巴前往黄果树瀑布</div>
+                                    <div class="note">车程约2小时</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">16:30</div>
+                                <div class="content">
+                                    <div class="location">黄果树瀑布</div>
+                                    <div class="activity">办理住宿</div>
+                                    <div class="note">建议提前预订酒店</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">18:00</div>
+                                <div class="content">
+                                    <div class="location">黄果树附近</div>
+                                    <div class="activity">晚餐</div>
+                                    <div class="note">品尝当地特色美食</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-day">
+                        <h3>Day 2 | 4月28日</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="time">08:00</div>
+                                <div class="content">
+                                    <div class="location">酒店</div>
+                                    <div class="activity">早餐</div>
+                                    <div class="note">准备游览装备</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">09:00</div>
+                                <div class="content">
+                                    <div class="location">黄果树瀑布景区</div>
+                                    <div class="activity">游览黄果树瀑布</div>
+                                    <div class="note">建议购买观光车票，游览时间约5-6小时</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">14:30</div>
+                                <div class="content">
+                                    <div class="location">景区内</div>
+                                    <div class="activity">午餐</div>
+                                    <div class="note">景区内有餐厅</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">16:00</div>
+                                <div class="content">
+                                    <div class="location">黄果树 → 西江</div>
+                                    <div class="activity">乘坐大巴前往西江千户苗寨</div>
+                                    <div class="note">车程约3小时</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">19:30</div>
+                                <div class="content">
+                                    <div class="location">西江千户苗寨</div>
+                                    <div class="activity">办理住宿，晚餐</div>
+                                    <div class="note">欣赏苗寨夜景</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-day">
+                        <h3>Day 3 | 4月29日</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="time">08:30</div>
+                                <div class="content">
+                                    <div class="location">酒店</div>
+                                    <div class="activity">早餐</div>
+                                    <div class="note">品尝苗家特色早餐</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">09:30</div>
+                                <div class="content">
+                                    <div class="location">西江千户苗寨</div>
+                                    <div class="activity">游览苗寨</div>
+                                    <div class="note">参观苗族博物馆、观景台等</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">12:30</div>
+                                <div class="content">
+                                    <div class="location">苗寨内</div>
+                                    <div class="activity">午餐</div>
+                                    <div class="note">品尝苗家酸汤鱼</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">14:30</div>
+                                <div class="content">
+                                    <div class="location">西江 → 镇远</div>
+                                    <div class="activity">乘坐大巴前往镇远古城</div>
+                                    <div class="note">车程约2.5小时</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">17:30</div>
+                                <div class="content">
+                                    <div class="location">镇远古城</div>
+                                    <div class="activity">办理住宿，晚餐</div>
+                                    <div class="note">欣赏古城夜景</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-day">
+                        <h3>Day 4 | 4月30日</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="time">08:30</div>
+                                <div class="content">
+                                    <div class="location">酒店</div>
+                                    <div class="activity">早餐</div>
+                                    <div class="note">准备返程</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">09:30</div>
+                                <div class="content">
+                                    <div class="location">镇远古城</div>
+                                    <div class="activity">游览古城</div>
+                                    <div class="note">参观青龙洞、舞阳河等</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">12:30</div>
+                                <div class="content">
+                                    <div class="location">古城内</div>
+                                    <div class="activity">午餐</div>
+                                    <div class="note">品尝镇远特色美食</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">14:00</div>
+                                <div class="content">
+                                    <div class="location">镇远 → 贵阳</div>
+                                    <div class="activity">乘坐大巴前往贵阳</div>
+                                    <div class="note">车程约3.5小时</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">18:00</div>
+                                <div class="content">
+                                    <div class="location">贵阳北站</div>
+                                    <div class="activity">乘坐高铁返回东莞</div>
+                                    <div class="note">建议提前30分钟到达高铁站</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>景点介绍</h2>
+                <div class="attraction-cards">
+                    <div class="attraction-card">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Huangguoshu%20Waterfall%20in%20Guizhou%20China%2C%20magnificent%20waterfall%2C%20natural%20landscape%2C%20clear%20water%20flowing%2C%20green%20surroundings&image_size=landscape_16_9" alt="黄果树瀑布">
+                        <div class="card-content">
+                            <h3>黄果树瀑布</h3>
+                            <p>黄果树瀑布是中国最大的瀑布，也是世界著名大瀑布之一。瀑布高度77.8米，宽101米，气势磅礴，景色壮观。</p>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <span class="label">门票：</span>
+                                    <span class="value">160元/人</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">观光车：</span>
+                                    <span class="value">50元/人</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">建议游览时间：</span>
+                                    <span class="value">5-6小时</span>
+                                </div>
+                            </div>
+                            <button class="checkin-btn" data-attraction="黄果树瀑布" data-lat="25.998224" data-lng="105.691627">
+                                <span class="icon">📍</span>
+                                <span>打卡</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Xijiang%20Miao%20Village%20in%20Guizhou%20China%2C%20traditional%20Miao%20architecture%2C%20stilt%20houses%2C%20night%20view%2C%20cultural%20village&image_size=landscape_16_9" alt="西江千户苗寨">
+                        <div class="card-content">
+                            <h3>西江千户苗寨</h3>
+                            <p>西江千户苗寨是中国最大的苗族聚居村寨，由10余个依山而建的自然村寨相连成片，是目前中国乃至全世界最大的苗族聚居村寨。</p>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <span class="label">门票：</span>
+                                    <span class="value">90元/人</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">观光车：</span>
+                                    <span class="value">20元/人</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">建议游览时间：</span>
+                                    <span class="value">1天</span>
+                                </div>
+                            </div>
+                            <button class="checkin-btn" data-attraction="西江千户苗寨" data-lat="26.480138" data-lng="108.077261">
+                                <span class="icon">📍</span>
+                                <span>打卡</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Zhenyuan%20Ancient%20Town%20in%20Guizhou%20China%2C%20ancient%20Chinese%20town%2C%20Wu%20River%20scenery%2C%20traditional%20architecture%2C%20cultural%20heritage&image_size=landscape_16_9" alt="镇远古城">
+                        <div class="card-content">
+                            <h3>镇远古城</h3>
+                            <p>镇远古城是中国历史文化名城，位于舞阳河畔，四周环山，河水蜿蜒，以“S”形穿城而过，形成了“九山抱一水，一水分两城”的独特格局。</p>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <span class="label">门票：</span>
+                                    <span class="value">免费</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">建议游览时间：</span>
+                                    <span class="value">半天</span>
+                                </div>
+                            </div>
+                            <button class="checkin-btn" data-attraction="镇远古城" data-lat="27.030342" data-lng="108.489593">
+                                <span class="icon">📍</span>
+                                <span>打卡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>交通信息</h2>
+                <div class="transport-info">
+                    <div class="transport-item">
+                        <h3>东莞 → 贵阳</h3>
+                        <p>高铁：约4.5小时，建议选择早上8:00左右的班次</p>
+                        <p>参考价格：约500元/人</p>
+                    </div>
+                    <div class="transport-item">
+                        <h3>贵阳 → 黄果树</h3>
+                        <p>大巴：约2小时，贵阳金阳客车站有直达班车</p>
+                        <p>参考价格：约80元/人</p>
+                    </div>
+                    <div class="transport-item">
+                        <h3>黄果树 → 西江</h3>
+                        <p>大巴：约3小时，需在安顺转车</p>
+                        <p>参考价格：约100元/人</p>
+                    </div>
+                    <div class="transport-item">
+                        <h3>西江 → 镇远</h3>
+                        <p>大巴：约2.5小时，西江客运站有直达班车</p>
+                        <p>参考价格：约80元/人</p>
+                    </div>
+                    <div class="transport-item">
+                        <h3>镇远 → 贵阳</h3>
+                        <p>大巴：约3.5小时，镇远客运站有直达班车</p>
+                        <p>参考价格：约100元/人</p>
+                    </div>
+                    <div class="transport-item">
+                        <h3>贵阳 → 东莞</h3>
+                        <p>高铁：约4.5小时，建议选择晚上18:00左右的班次</p>
+                        <p>参考价格：约500元/人</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>食宿信息</h2>
+                <div class="accommodation-info">
+                    <div class="accommodation-item">
+                        <h3>Day 1 | 黄果树附近</h3>
+                        <p><strong>推荐住宿：</strong>黄果树迎宾馆</p>
+                        <p><strong>地址：</strong>贵州省安顺市镇宁布依族苗族自治县黄果树风景名胜区</p>
+                        <p><strong>参考价格：</strong>300-500元/晚</p>
+                        <p><strong>推荐餐厅：</strong>黄果树大瀑布餐厅</p>
+                    </div>
+                    <div class="accommodation-item">
+                        <h3>Day 2 | 西江千户苗寨</h3>
+                        <p><strong>推荐住宿：</strong>西江千户苗寨观景台民宿</p>
+                        <p><strong>地址：</strong>贵州省黔东南苗族侗族自治州雷山县西江镇</p>
+                        <p><strong>参考价格：</strong>200-400元/晚</p>
+                        <p><strong>推荐餐厅：</strong>苗家酸汤鱼馆</p>
+                    </div>
+                    <div class="accommodation-item">
+                        <h3>Day 3 | 镇远古城</h3>
+                        <p><strong>推荐住宿：</strong>镇远古城临江客栈</p>
+                        <p><strong>地址：</strong>贵州省黔东南苗族侗族自治州镇远县舞阳镇</p>
+                        <p><strong>参考价格：</strong>150-300元/晚</p>
+                        <p><strong>推荐餐厅：</strong>镇远古城特色小吃街</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>旅游地图</h2>
+                <div id="map" class="map"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>实用信息</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>紧急电话</h3>
+                        <ul>
+                            <li>报警：110</li>
+                            <li>医疗急救：120</li>
+                            <li>消防：119</li>
+                            <li>旅游咨询：12301</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>注意事项</h3>
+                        <ul>
+                            <li>贵州天气多变，建议携带雨具和外套</li>
+                            <li>黄果树瀑布景区水汽较大，建议穿防滑鞋</li>
+                            <li>西江千户苗寨海拔较高，注意保暖</li>
+                            <li>镇远古城夜晚较凉，建议携带薄外套</li>
+                            <li>尊重当地少数民族风俗习惯</li>
+                            <li>注意保管好个人财物</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 贵州旅行攻略 | 安全至上，性价比高</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">功能设置</h3>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- 行程提醒内容 -->
+                <div id="reminder-content" class="modal-section">
+                    <h4>行程提醒设置</h4>
+                    <p>开启行程提醒后，系统会在行程节点前提醒您</p>
+                    <label>
+                        <input type="checkbox" id="enable-reminders">
+                        开启行程提醒
+                    </label>
+                    <div class="reminder-time">
+                        <label>提醒时间提前量：</label>
+                        <select id="reminder-offset">
+                            <option value="5">5分钟</option>
+                            <option value="10">10分钟</option>
+                            <option value="15">15分钟</option>
+                            <option value="30">30分钟</option>
+                        </select>
+                    </div>
+                    <button id="save-reminder" class="btn">保存设置</button>
+                </div>
+                
+                <!-- 景点打卡内容 -->
+                <div id="checkin-content" class="modal-section" style="display: none;">
+                    <h4>景点打卡</h4>
+                    <div id="checkin-status"></div>
+                    <button id="start-checkin" class="btn">开始打卡</button>
+                </div>
+                
+                <!-- 分享行程内容 -->
+                <div id="share-content" class="modal-section" style="display: none;">
+                    <h4>分享行程</h4>
+                    <p>选择分享方式：</p>
+                    <div class="share-options">
+                        <button class="share-btn" data-platform="wechat">
+                            <span class="icon">💬</span>
+                            <span>微信</span>
+                        </button>
+                        <button class="share-btn" data-platform="weibo">
+                            <span class="icon">📱</span>
+                            <span>微博</span>
+                        </button>
+                        <button class="share-btn" data-platform="copy">
+                            <span class="icon">📋</span>
+                            <span>复制链接</span>
+                        </button>
+                    </div>
+                    <div id="share-link" class="share-link">
+                        <input type="text" id="link-input" readonly>
+                        <button id="copy-link">复制</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
